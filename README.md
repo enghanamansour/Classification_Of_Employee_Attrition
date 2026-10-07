@@ -4,6 +4,20 @@ An end-to-end Machine Learning classification and risk diagnostic platform built
 
 ---
 
+## 🎓 الإشارة إلى البرنامج التدريبي (Training Program Acknowledgement)
+
+تم تنفيذ وتطوير هذا المشروع ضمن متطلبات **برنامج أساسيات تعلم الآلة** المقدم من **أكاديمية سدايا (SDAIA Academy)** للهيئة السعودية للبيانات والذكاء الاصطناعي، وذلك بهدف تطبيق أفضل الممارسات في مجال تعلم الآلة وبناء نماذج التصنيف.
+
+This project was developed as part of the **Fundamentals of Machine Learning** program offered by **SDAIA Academy**.
+
+| | |
+| :--- | :--- |
+| **البرنامج / Program** | أساسيات تعلم الآلة (Fundamentals of Machine Learning) |
+| **المدربة / Instructor** | حنين المعيوف (Haneen Almaiouf) |
+| **فريق العمل / Team** | هناء الشمراني (Hanaa Alshamrani) · رشا السالمي (Rasha Alsalmi) · سارة عسيري (Sarah Asiri) |
+
+---
+
 ## 📊 1. Dataset & Problem Summary
 
 - **Objective**: Predict whether an employee will leave the organization (`Attrition` = `'Yes'` vs `'No'`).
