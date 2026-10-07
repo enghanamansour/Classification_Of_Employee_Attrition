@@ -1,0 +1,219 @@
+{
+  "model_name": "Soft Voting Ensemble",
+  "optimal_threshold": 0.5,
+  "dataset_summary": {
+    "total_samples": 1470,
+    "train_samples": 1176,
+    "test_samples": 294,
+    "total_features": 30,
+    "preprocessed_features": 44,
+    "attrition_rate": 0.16122448979591836
+  },
+  "cross_validation_5fold": {
+    "Logistic Regression (Balanced)": {
+      "roc_auc_mean": 0.8275554098289872,
+      "roc_auc_std": 0.030386280660033297,
+      "pr_auc_mean": 0.6102923300711094,
+      "pr_auc_std": 0.08304860656309015,
+      "f1_mean": 0.48828235796699404,
+      "recall_mean": 0.7368421052631579,
+      "precision_mean": 0.3669062408922644,
+      "accuracy_mean": 0.7499567255679769
+    },
+    "Random Forest (Balanced)": {
+      "roc_auc_mean": 0.7977231573010359,
+      "roc_auc_std": 0.02951849471073702,
+      "pr_auc_mean": 0.5498693097869629,
+      "pr_auc_std": 0.07472533074119152,
+      "f1_mean": 0.3846692642532726,
+      "recall_mean": 0.26842105263157895,
+      "precision_mean": 0.7153923853923854,
+      "accuracy_mean": 0.8647854309412188
+    },
+    "XGBoost (Weighted)": {
+      "roc_auc_mean": 0.8043498031342006,
+      "roc_auc_std": 0.02778860480245275,
+      "pr_auc_mean": 0.6066635217196867,
+      "pr_auc_std": 0.061522487199088545,
+      "f1_mean": 0.5269177176117824,
+      "recall_mean": 0.5578947368421053,
+      "precision_mean": 0.5127231583550831,
+      "accuracy_mean": 0.8383952398124774
+    },
+    "Soft Voting Ensemble": {
+      "roc_auc_mean": 0.8311772547813158,
+      "roc_auc_std": 0.030465783448229967,
+      "pr_auc_mean": 0.6494218077243403,
+      "pr_auc_std": 0.07109902572340283,
+      "f1_mean": 0.572482856452513,
+      "recall_mean": 0.6736842105263158,
+      "precision_mean": 0.5026682014991519,
+      "accuracy_mean": 0.8375586007933645
+    }
+  },
+  "test_set_performance": {
+    "Logistic Regression (Balanced)": {
+      "roc_auc": 0.8054957360668447,
+      "pr_auc": 0.5802107040201174,
+      "accuracy": 0.7619047619047619,
+      "balanced_accuracy": 0.7290894995262296,
+      "precision": 0.367816091954023,
+      "recall": 0.6808510638297872,
+      "f1_score": 0.47761194029850745,
+      "confusion_matrix": [
+        [
+          192,
+          55
+        ],
+        [
+          15,
+          32
+        ]
+      ]
+    },
+    "Random Forest (Balanced)": {
+      "roc_auc": 0.787578602808166,
+      "pr_auc": 0.4157658494363842,
+      "accuracy": 0.8197278911564626,
+      "balanced_accuracy": 0.5653803083814282,
+      "precision": 0.375,
+      "recall": 0.19148936170212766,
+      "f1_score": 0.2535211267605634,
+      "confusion_matrix": [
+        [
+          232,
+          15
+        ],
+        [
+          38,
+          9
+        ]
+      ]
+    },
+    "XGBoost (Weighted)": {
+      "roc_auc": 0.773451632354208,
+      "pr_auc": 0.49942021402659165,
+      "accuracy": 0.8027210884353742,
+      "balanced_accuracy": 0.6844689465070204,
+      "precision": 0.4067796610169492,
+      "recall": 0.5106382978723404,
+      "f1_score": 0.4528301886792453,
+      "confusion_matrix": [
+        [
+          212,
+          35
+        ],
+        [
+          23,
+          24
+        ]
+      ]
+    },
+    "Soft Voting Ensemble": {
+      "roc_auc": 0.8074769575329486,
+      "pr_auc": 0.5762995676690876,
+      "accuracy": 0.8095238095238095,
+      "balanced_accuracy": 0.6971315358773366,
+      "precision": 0.423728813559322,
+      "recall": 0.5319148936170213,
+      "f1_score": 0.4716981132075472,
+      "confusion_matrix": [
+        [
+          213,
+          34
+        ],
+        [
+          22,
+          25
+        ]
+      ]
+    }
+  },
+  "tuned_threshold_metrics": {
+    "threshold": 0.5,
+    "accuracy": 0.8095238095238095,
+    "precision": 0.423728813559322,
+    "recall": 0.5319148936170213,
+    "f1_score": 0.4716981132075472,
+    "confusion_matrix": [
+      [
+        213,
+        34
+      ],
+      [
+        22,
+        25
+      ]
+    ]
+  },
+  "key_risk_drivers": {
+    "OverTime_Yes": 1.5077108686065692,
+    "BusinessTravel_Travel_Frequently": 1.268551960980357,
+    "JobRole_Laboratory Technician": 1.17764698491445,
+    "JobRole_Sales Representative": 0.8019719709454136,
+    "MaritalStatus_Single": 0.725496628200126,
+    "BusinessTravel_Travel_Rarely": 0.621438917719547,
+    "YearsSinceLastPromotion": 0.4628218093398269,
+    "NumCompaniesWorked": 0.43253343853946896,
+    "Department_Sales": 0.37633748547421836,
+    "JobLevel": 0.3735387387976138
+  },
+  "key_protective_factors": {
+    "JobRole_Research Director": -0.7164188433686859,
+    "EducationField_Other": -0.6876047433161228,
+    "TotalWorkingYears": -0.5268498794468969,
+    "Department_Research & Development": -0.47691769602254236,
+    "YearsWithCurrManager": -0.412998529673079,
+    "EnvironmentSatisfaction": -0.3916094488919727,
+    "JobSatisfaction": -0.37318920241578357,
+    "Age": -0.2795445362516618,
+    "JobInvolvement": -0.27953562336373095,
+    "MonthlyIncome": -0.26287524901807796
+  },
+  "top_random_forest_features": {
+    "MonthlyIncome": 0.08176163557608679,
+    "Age": 0.06422160472394274,
+    "TotalWorkingYears": 0.06256725073947714,
+    "YearsAtCompany": 0.055734614748469476,
+    "OverTime_Yes": 0.0536988804722473,
+    "DailyRate": 0.048349985999693736,
+    "YearsWithCurrManager": 0.04560593663954867,
+    "DistanceFromHome": 0.040888078244144366,
+    "MonthlyRate": 0.04021397231868437,
+    "HourlyRate": 0.03983677895315403
+  },
+  "numerical_features": [
+    "Age",
+    "DailyRate",
+    "DistanceFromHome",
+    "Education",
+    "EnvironmentSatisfaction",
+    "HourlyRate",
+    "JobInvolvement",
+    "JobLevel",
+    "JobSatisfaction",
+    "MonthlyIncome",
+    "MonthlyRate",
+    "NumCompaniesWorked",
+    "PercentSalaryHike",
+    "PerformanceRating",
+    "RelationshipSatisfaction",
+    "StockOptionLevel",
+    "TotalWorkingYears",
+    "TrainingTimesLastYear",
+    "WorkLifeBalance",
+    "YearsAtCompany",
+    "YearsInCurrentRole",
+    "YearsSinceLastPromotion",
+    "YearsWithCurrManager"
+  ],
+  "categorical_features": [
+    "BusinessTravel",
+    "Department",
+    "EducationField",
+    "Gender",
+    "JobRole",
+    "MaritalStatus",
+    "OverTime"
+  ]
+}
