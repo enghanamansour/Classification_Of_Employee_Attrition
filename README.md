@@ -10,6 +10,9 @@ An end-to-end Machine Learning classification and risk diagnostic platform built
 
 This project was developed as part of the **Fundamentals of Machine Learning** program offered by **SDAIA Academy**.
 
+🔗 **رابط حساب أكاديمية سدايا على GitHub:**
+👉 [SDAIA Academy GitHub Repository](https://github.com/SDAIAAcademy)
+
 | | |
 | :--- | :--- |
 | **البرنامج / Program** | أساسيات تعلم الآلة (Fundamentals of Machine Learning) |
